@@ -1,0 +1,121 @@
+.commentInput {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: flex-start;
+	width: 100%;
+	height: fit-content;
+	background-color: white;
+	border-radius: 6px;
+	box-shadow: var(--shadow-default);
+	margin-top: 60px;
+	padding: 20px;
+}
+.commentInput > img {
+	width: 40px;
+	height: 40px;
+	margin-right: 20px;
+	border-radius: 50%;
+}
+
+.commentInput > form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 200px;
+	background-color: white;
+	border-radius: 4px;
+}
+
+.commentInput > form > textarea {
+	font-family: Roboto, Signika, Arial;
+	width: 100%;
+	min-height: 78%;
+	resize: none;
+	padding: 10px 10px;
+	border-radius: 4px 4px 0 0;
+	background: #f8f7ff;
+	border: 1px solid #e1e4e8;
+	transition: var(--transition-default);
+	transition-property: border, background;
+}
+.commentInput > form > textarea:hover {
+	border-color: rgba(124, 106, 239, 0.5);
+}
+.commentInput > form > textarea:focus {
+	border-color: rgba(124, 106, 239, 0.3);
+}
+
+.commentInput > form > div {
+	padding: 10px;
+	width: 100%;
+	min-height: 22%;
+	display: flex;
+	justify-content: space-between;
+	border-left: 1px solid #e1e4e8;
+	border-right: 1px solid #e1e4e8;
+	border-bottom: 1px solid #e1e4e8;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+	align-items: center;
+}
+.commentInput > form > div > a#markdown {
+	width: fit-content;
+	height: 100%;
+	display: inline-flex;
+	align-items: center;
+	text-decoration: none;
+}
+.commentInput > form > div > a#markdown > svg {
+	width: 20px;
+	margin-right: 8px;
+	fill: var(--theme-purple);
+}
+.commentInput > form > div > a#markdown > span {
+	font-size: 12px;
+	color: var(--black-07);
+}
+
+.commentInput > form > div > input {
+	font-family: Signika, Roboto, Arial;
+	font-size: 14px;
+	padding: 6px;
+	font-weight: 500;
+	background: #7c6aef;
+	border: 1px solid black;
+	border-radius: 6px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	transition: var(--transition-default);
+	transition-property: background, transform;
+}
+.commentInput > form > div > input:hover {
+	background: rgb(109, 90, 237);
+	transform: scale(0.99);
+}
+
+.notLogged {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.notLogged > span {
+	color: var(--black-07);
+}
+.notLogged > a {
+	font-family: Signika, Roboto, Arial;
+	font-size: 14px;
+	padding: 6px;
+	font-weight: 500;
+	margin-top: 10px;
+	background: #7c6aef;
+	border: 1px solid black;
+	border-radius: 6px;
+	border: none;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
+}
