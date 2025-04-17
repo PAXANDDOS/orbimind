@@ -1,0 +1,63 @@
+.filteringBar {
+	width: 100%;
+	height: 34px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.filteringBar > div:first-child {
+	min-width: 220px;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.filteringBar > div:first-child > span {
+	font-size: 16px;
+	line-height: 17px;
+	color: black;
+}
+.filteringBar > div:first-child > a#ask {
+	display: grid;
+	place-items: center;
+	text-decoration: none;
+	height: 100%;
+	font-size: 14px;
+	line-height: 17px;
+	background: var(--theme-purple);
+	border-radius: 4px;
+	margin-left: 10px;
+	color: white;
+	padding: 0 6px;
+	transition: var(--transition-default);
+	transition-property: background, transform;
+}
+.filteringBar > div:first-child > a#ask:hover {
+	background-color: var(--theme-purple-darken);
+	transform: scale(1.02);
+}
+
+.filteringBar > div:last-child {
+	min-width: fit-content;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.filteringBar > div:last-child > div {
+	border-radius: 5px;
+	width: 108px;
+}
+.filteringBar > div:last-child > span {
+	margin-left: 20px;
+}
+.filteringBar > div:last-child > button {
+	background: #f8f7ff;
+	border: 1px solid #e1e4e8;
+	border-radius: 5px;
+	margin-left: 20px;
+	padding: 0 10px;
+	height: 100%;
+	font-size: 14px;
+	line-height: 17px;
+}

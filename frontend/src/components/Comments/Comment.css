@@ -1,0 +1,114 @@
+.commentsSection {
+	width: 100%;
+	min-height: fit-content;
+	margin-top: 40px;
+}
+.commentsSection > h1 {
+	font-weight: 600;
+	font-size: 21px;
+	line-height: 26px;
+}
+.singleComment {
+	width: 100%;
+	min-height: 100px;
+	background: #ffffff;
+	box-shadow: var(--shadow-default);
+	border-radius: 6px;
+	display: flex;
+	flex-direction: row;
+	margin-top: 20px;
+}
+.singleComment > div:first-child {
+	width: 64px;
+	min-height: 100%;
+	border-right: 1px solid #e2e2e2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 0;
+}
+.singleComment > div:first-child {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.singleComment > div:first-child > button {
+	fill: rgba(165, 165, 165, 0.5);
+	width: 20px;
+	transition: var(--transition-default);
+	transition-property: fill;
+}
+.singleComment > div:first-child > span {
+	font-size: 20px;
+	line-height: 27px;
+	text-align: center;
+	color: #414141;
+	margin: 2px 0;
+}
+.singleComment > div:first-child > button#dislike > svg {
+	transform: matrix(1, 0, 0, -1, 0, 0);
+}
+.singleComment > div:first-child > button#checkmark > svg {
+	width: 20px;
+	margin-top: 10px;
+	transition: var(--transition-default);
+	transition-property: fill;
+}
+.singleComment > div:first-child > button:hover {
+	fill: rgba(165, 165, 165, 0.8);
+}
+.singleComment > div:first-child > button#checkmark > svg:hover {
+	fill: var(--theme-purple);
+}
+
+.singleComment > div:last-child {
+	width: calc(100% - 64px);
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.singleComment > div:last-child > div:first-child {
+	padding: 10px;
+	font-family: Roboto, Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 18px;
+}
+.singleComment > div:last-child > div:last-child {
+	background: #f8f7ff;
+	border-top: 1px solid #e1e4e8;
+	height: 36px;
+	width: 100%;
+	border-bottom-right-radius: 6px;
+	display: inline-flex;
+	align-items: center;
+	padding: 12px;
+	justify-content: space-between;
+}
+.singleComment > div:last-child > div:last-child > div > span {
+	font-family: Roboto, Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 14px;
+	color: var(--black-07);
+	text-decoration: none;
+}
+.singleComment > div:last-child > div:last-child > div > span > a:hover {
+	text-decoration: underline;
+}
+.singleComment > div:last-child > div:last-child > div > span > span#rating {
+	font-family: Roboto, Ubuntu, "Open Sans", "Helvetica Neue", sans-serif;
+	font-size: 12px;
+	color: var(--black-07);
+	background-color: rgba(124, 106, 239, 0.3);
+	border-radius: 4px;
+	padding: 2px 3px;
+}
+.singleComment > div:last-child > div:last-child > span {
+	font-weight: 300;
+	font-size: 13px;
+	color: var(--black-07);
+}
